@@ -1,0 +1,25 @@
+clase vehiculo
+  privado entero placa
+  privado cadena modelo 
+  privado real capacidadCarga
+
+publico vehículo()
+finMetodo
+
+publico vehículo(entero placa, cadena modelo, real capacidadCarga)
+  este.placa= placa
+  este.modelo= modelo 
+  este.capacidadCarga= capacidadCarga
+finMetodo
+
+publico entero placa()
+  retornar placa
+finMetodo
+
+publico cadena modelo()
+  retornar modelo 
+finMetodo
+
+publico real capacidasCarga()
+  retornar capacidadCarga
+finMetodo
