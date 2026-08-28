@@ -65,8 +65,11 @@ finMetodo
 
 publico vacio actualizarRegistro(Archivo arch, Cadena cedula)
  1. abrimos archivo de clientes en modo lectura
+arch.abrirModoLectura("DatosClientes.txt")
  2. recorrer el archivo para contar los registros del archivo
+entero cl = arch.contadorLineas("DatosClientes.txt")
  3. crear vector tipo Cliente que su tamaño sea de acuerdo a la cantidad registros encontrados
+Cliente[] vecC = nuevo Cliente[cl]  
  4. asignarle al vector los registros identificados en el archivo y cerrar archivo en modo lectura
  5. recorrer el vector para encontrar la cedula y realizar la actualización. para eso se
     necesita una estructura ciclica y dentro de la estrcutura se compara las cedulas y si 
